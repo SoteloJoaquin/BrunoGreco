@@ -1,0 +1,19 @@
+footer
+{ background-color:rgb(14, 14, 110);
+
+    display: flex;
+    justify-content: space-evenly;    
+    bottom: 0;
+    text-align: center;  
+    right: 0;
+}
+
+dt
+{ color: white;}
+
+.colordl{color: white;}
+
+dl
+{
+    align-items: center;
+}
