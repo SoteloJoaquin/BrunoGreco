@@ -1,3 +1,11 @@
+
+body{
+
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+
+
 h1{ 
     color: white;
     display: flex;
@@ -8,7 +16,7 @@ h1{
 
 header{
 
-    background-color:rgb(14, 14, 110);
+    background-color:black;
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -36,10 +44,6 @@ li{
 li a{
     color: white;
 }
-body{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 .contenedor_flex {
     padding: 1%;
@@ -63,7 +67,7 @@ body{
   .botonComprar {
     border-radius: 4px;
     margin: auto;
-    font-size: 20px;
+    font-size: 17px;
     color: black;
     text-decoration: none;
 
@@ -93,9 +97,12 @@ body{
     text-align: center;
 }
 
-
 .form-group {
     margin-bottom: 20px;
+}
+
+.maps_container{
+    text-align: right;
 }
 
 label {
@@ -120,18 +127,6 @@ textarea:focus {
     outline: none;
 }
 
-/* Estilo para el botón */
-.form-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
 .form-button:hover {
     background-color: #0056b3;
@@ -149,15 +144,15 @@ textarea {
 }
 
 .header-icon {
-    margin-right: 200px;
-    padding-left: 15px;
-    width: 170px; 
-    height: 170px; 
+    margin-right: 250px;
+    padding-left: 75px;
+    width: 230px; 
+    height: 230px; 
 }
 
 .header-text {
     display: flex;
-    flex-direction: column; /* Para alinear el h1 y h2 en columna */
+    flex-direction: column; 
     text-align: center;
 }
 
