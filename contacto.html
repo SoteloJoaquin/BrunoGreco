@@ -16,6 +16,7 @@
         <div class="header-text">
             <h1>Mecánica Gráfica</h1>
             <h2 class="subtitulo">Angel Greco</h2>
+<hr/>
         
         <nav>
             <ul>
@@ -37,8 +38,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Maquinaria.html">
-                        Maquinaria
+                    <a href="Productos.html">
+                        Productos
                     </a>
                 </li>
     
@@ -53,7 +54,7 @@
 
 
 
-<main>
+<!-- <main>
    <h2>Contacto: </h2>
 <form class="form-container" action="https://formspree.io/f/mvgozrda"  method="POST">
   <label for="nombre">
@@ -81,24 +82,54 @@
 </div>
          </section>
 
-</main>
-<footer>
+</main> -->
+<main>
+    <div class="contact-map-container">
+       <section class="form-section">
+          <h2>Contacto:</h2>
+          <form class="form-container" action="https://formspree.io/f/mvgozrda" method="POST">
+             <label for="nombre">
+             Nombre:
+             <input type="text" name="nombre" placeholder="Nombre">
+             </label>
+             <label>
+             Email:
+             <input type="email" name="email" placeholder="Email">
+             </label>
+             <label>
+             Mensaje:
+             <textarea name="message" placeholder="Escribe tu mensaje aquí"></textarea>
+             </label>
+             <button type="submit">Enviar</button>
+          </form>
+       </section>
+       <section class="map-section">
+          <h2>¿Cómo Llegar?</h2>
+          <div class="maps_container">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.5050157426226!2d-58.37870312509288!3d-34.692440162187715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccd4379f4c63%3A0xf62624005437cebf!2sAv.%20Teodoro%20S%C3%A1nchez%20de%20Bustamante%20%26%20Cmte.%20Mamberti%2C%20B1824%20Gerli%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1729975536025!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+       </section>
+    </div>
+ </main>
+ 
+ <footer>
     <div class="footer-left">
         <p><strong>¿Qué hacemos?:</strong></p>
-        <div style="display: flex;">
+        <div class="columns">
             <ul class="col">
                 <li>Reparación</li>
                 <li>Mantenimiento</li>
-                <li>Tornería</li>
             </ul>
             <ul class="col">
+                <li>Tornería</li>
                 <li>Asesoramiento</li>
+            </ul>
+            <ul class="col">
                 <li>Venta de Maquinaria</li>
                 <li>Atención Personalizada</li>
             </ul>
         </div>
-    </div>
-
+    </div>
     <div class="footer-right">
         <p><strong>Encuéntranos en:</strong></p>
         <a href="https://www.instagram.com/angelgreco59/?hl=es" target="_blank">

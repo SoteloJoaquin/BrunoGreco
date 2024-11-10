@@ -1,51 +1,99 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
 
-    
-        footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: black;
-            color: white;
-        }
+.footer-left, .footer-right {
+    flex: 1;
+}
 
-        
-        .footer-left {
-            display: flex;
-            flex-direction: column;
-        }
+.footer-left {
+    text-align: left;
+}
 
-        
-        .footer-left ul {
-            list-style: none; 
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
+.footer-left p {
+    font-weight: bold;
+}
 
-        .footer-left ul li {
-            position: relative;
-            padding-left: 20px; 
-            margin: 5px 10px; 
-        }
+.footer-left .columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Alinea las columnas a la izquierda */
+}
 
-        .footer-left ul li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: white;
-        }
+.footer-left .col {
+    list-style: none;
+    padding: 0;
+    margin: 0 10px;
+    flex: 1 1 30%; /* Ajusta el ancho para que se adapten a dos elementos por columna */
+    min-width: 120px;
+    max-width: 150px;
+}
 
-        .col {
-            margin-right: 20px;
-        }
+.footer-left .col li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Mantiene los nombres largos en una sola línea */
+}
 
-        .footer-right a {
-            margin-left: 10px;
-        }
+.footer-left .col li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #fff;
+}
 
-        .footer-right img {
-            width: 24px;
-            height: 24px;
-        }
-    
+.footer-right {
+    text-align: right;
+}
+
+.footer-right a {
+    margin-left: 10px;
+}
+
+.footer-right img {
+    width: 24px;
+    height: 24px;
+}
+
+footer nav {
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+footer nav ul li {
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+    }
+
+    .footer-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer nav ul {
+        flex-direction: row;
+    }
+
+    footer nav ul li {
+        margin: 0 10px;
+    }
+}

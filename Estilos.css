@@ -3,8 +3,42 @@ body{
 
     font-family: Verdana, Tahoma, sans-serif;
 }
+ hr{
+    width: 100%;
+ }
+
+.hrnegro{ 
+    color:black;
+    width: 100%;
+    margin-left: 0;
+}
+
+.parrafo50{
+    width: 100%;
+}
 
 
+.div-p {
+    margin-left: 5%;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que las secciones se envuelvan en pantallas pequeñas */
+}
+
+.sectionp, .sectionimg {
+    flex: 1;
+}
+
+/* Imagen de la sección */
+.sectionimg img {
+    width: 97%;
+    padding: 2%;
+}
+
+.sectionimg {
+    display: none;
+}
 
 h1{ 
     color: white;
@@ -12,6 +46,7 @@ h1{
     justify-content: center;
     font-size: 50px;
     margin: 0%;
+    font-family: emoji;
 }
 
 header{
@@ -21,6 +56,8 @@ header{
     align-items: center;
     padding: 10px 20px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .subtitulo
@@ -29,10 +66,19 @@ header{
     color: white;
     display: flex;
     justify-content: center;
+    font-family: emoji;
 }
 
-ul
-{
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+ul{
     list-style-type: none;
     padding: 0%;
     justify-content: space-evenly;
@@ -142,17 +188,126 @@ textarea {
     border-radius: 4px;
     font-size: 16px;
 }
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
 
 .header-icon {
-    margin-right: 250px;
-    padding-left: 75px;
-    width: 230px; 
-    height: 230px; 
+    width: 100px;
+    height: auto;
 }
 
 .header-text {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+.contact-map-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.form-section, .map-section {
+    flex: 1; /* Ambos elementos ocupan el mismo ancho cuando están en fila */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+    border: 0;
+}
+
+.map-section{
+    padding-right: 3%;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 1100px) {
+    .contact-map-container {
+        flex-direction: column; /* Cambia a disposición en columna */
+    }
+
+    .form-section, .map-section {
+        flex: none; /* Los elementos ocuparán el 100% del ancho disponible */
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .sectionimg{
+        display: block;
+    }
+    header {
+        flex-direction: column;
+    }
+
+    .header-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
 }
 
